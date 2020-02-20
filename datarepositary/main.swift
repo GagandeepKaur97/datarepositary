@@ -8,5 +8,14 @@
 
 import Foundation
 
-print("Hello, World!")
+class datarepositary{
+ static  private var repo = datarepositary()
+    private init(){
+        
+    }
+     static func  getinstance () -> datarepositary{
+        return repo
+        
+    }
+}
 
